@@ -3,9 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Requests;
-use App\Shop;
-use App\Http\Resources\Shop as ShopResource;
 
 class ShopController extends Controller
 {
@@ -16,9 +13,7 @@ class ShopController extends Controller
      */
     public function index()
     {
-        $shops = Shop::all();
-
-        return ShopResource::collection($shops);
+        //
     }
 
     /**
